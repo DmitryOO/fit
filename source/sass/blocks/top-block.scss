@@ -1,0 +1,120 @@
+.top-block {
+  width: 100%;
+  font-family: $roboto;
+  color: #ffffff;
+  padding-bottom: 47px;
+  background-color: #7f1445;
+  background-image: url("../img/gradient_desktop_1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/gradient_desktop_2x.jpg");
+  }
+}
+
+.top-block__wrapper {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 31px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.top-block__info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top-block__facilities {
+  min-width: 113px;
+  font-size: 14px;
+  line-height: 150%;
+  list-style: none;
+  text-align: right;
+  padding-left: 0;
+  margin-bottom: -86px;
+}
+
+.top-block__facilities-text {
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  text-align: right;
+  padding-top: 60px;
+  padding-left: 19px;
+}
+
+.top-block__button {
+  font-family: $roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  align-self: flex-end;
+  padding: 20px 55px;
+  margin-top: -56px;
+  margin-right: -17px;
+}
+
+.top-block a {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.top-block__buy {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-block__text {
+  max-width: 300px;
+  font-family: $bebas;
+  text-transform: uppercase;
+  margin-left: -34px;
+}
+
+.top-block__text h3 {
+  font-size: 109px;
+  line-height: 110px;
+  letter-spacing: 0.03em;
+  margin-top: 10px;
+}
+
+.top-block__text p {
+  font-size: 49px;
+  font-weight: 400;
+  letter-spacing: 0.03em;
+  margin-bottom: 0;
+}
+
+.top-block__img {
+  margin-top: -5px;
+  margin-left: -65px;
+}
+
+.top-block__socials {
+  list-style: none;
+  font-size: 12px;
+  text-align: right;
+  align-self: flex-end;
+  padding-right: 0;
+  margin-bottom: 25px;
+}
+
+.top-block__socials a {
+  color: #ffffff;
+}
+
+.top-block__socials li {
+  margin-bottom: 20px;
+}
