@@ -14,17 +14,6 @@
   margin-right: 2px;
 }
 
-@media (max-width: 1200px) {
-  .top-block__wrapper {
-    max-width: 983px;
-  }
-
-  .top-block__img {
-    margin-top: 0;
-    margin-left: -20px;
-  }
-}
-
 @media (max-width: $tablet-width) {
   .page-header__logo-img {
     width: 80px;

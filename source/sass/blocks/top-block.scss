@@ -2,7 +2,7 @@
   width: 100%;
   font-family: $roboto;
   color: #ffffff;
-  padding-bottom: 47px;
+  padding-bottom: 16px;
   background-color: #7f1445;
   background-image: url("../img/gradient_desktop_1x.jpg");
   background-repeat: no-repeat;
@@ -98,8 +98,8 @@
 }
 
 .top-block__img {
-  margin-top: -5px;
-  margin-left: -106px;
+  margin-top: 27px;
+  margin-left: -92px;
 }
 
 .top-block__socials {
@@ -108,7 +108,7 @@
   text-align: right;
   align-self: flex-end;
   padding-left: 0;
-  margin-bottom: 25px;
+  margin-bottom: 57px;
 }
 
 .top-block__socials a {
@@ -119,9 +119,25 @@
   margin-bottom: 20px;
 }
 
+@media (max-width: 1200px) {
+  .top-block__wrapper {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .top-block__img {
+    margin-left: -40px;
+  }
+}
+
 @media (max-width: $tablet-width) {
   .top-block {
     padding-bottom: 82px;
+    background-image: url("../img/gradient_tablet_1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gradient_tablet_2x.jpg");
+    }
   }
 
   .top-block__wrapper {
@@ -135,6 +151,7 @@
   }
 
   .top-block__img {
+    margin-top: -5px;
     width: 324px;
     height: 390px;
     overflow: hidden;
@@ -186,6 +203,16 @@
 
 
 @media (max-width: $mobile-width) {
+  .top-block {
+    padding-bottom: 79px;
+
+    background-image: url("../img/gradient_mobile_1x.jpg");
+
+    @media (min-resolution: $retina-dppx) {
+      background-image: url("../img/gradient_mobile_2x.jpg");
+    }
+  }
+
   .top-block__img {
     display: none;
   }
