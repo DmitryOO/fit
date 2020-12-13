@@ -627,7 +627,8 @@ footer {
 
 .members__label {
   margin-bottom: -13px;
-  padding-bottom: 11px; }
+  padding-bottom: 11px;
+  cursor: pointer; }
 
 .members__type {
   width: 360px;
@@ -738,3 +739,170 @@ footer {
     font-size: 48px;
     margin-top: 56px;
     margin-bottom: 53px; } }
+
+.games {
+  max-width: 1160px;
+  min-height: 500px;
+  background-color: #000145;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-top: 1px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+  background-image: url("../img/crossfit_1x.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .games {
+      background-image: url("../img/crossfit_2x.jpg"); } }
+
+.games__info {
+  width: 500px;
+  min-height: 500px;
+  background-color: #ed0233;
+  margin-top: -1px;
+  padding-left: 78px;
+  padding-right: 78px; }
+
+.games__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.games__head h2 {
+  font-family: "Bebas Neue", "Arial", sans-serif;
+  font-size: 90px;
+  line-height: 90px;
+  letter-spacing: 0.03em;
+  margin-top: 83px;
+  margin-bottom: 0; }
+
+.games__info > p {
+  margin-top: 10px;
+  margin-bottom: 44px; }
+
+.games__number-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin-bottom: 18px; }
+
+.games__number-month::before {
+  content: "";
+  width: 63px;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  top: -3px; }
+
+.games__number-month p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 40px; }
+
+.games__number-month p:nth-last-child(1) {
+  font-size: 14px;
+  line-height: 150%;
+  padding-left: 5px; }
+
+.games__button {
+  display: block;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  border: 4px solid #ffffff;
+  padding: 18px 55px; }
+  .games__button:hover, .games__button:focus, .games__button:active {
+    opacity: 0.7; }
+
+.games__date-time {
+  min-width: 92px;
+  margin-top: 81px; }
+
+.games__date-time > p:nth-last-child(1) {
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 150%;
+  position: relative; }
+  .games__date-time > p:nth-last-child(1)::before {
+    content: "";
+    width: 87px;
+    height: 1px;
+    background-color: #ffffff;
+    position: absolute;
+    top: 5px; }
+
+.games__date-time p {
+  margin-top: 0;
+  margin-bottom: 0; }
+
+.games__date-time > p:nth-of-type(1) {
+  margin-bottom: 7px; }
+
+@media (max-width: 1199px) {
+  .games {
+    min-height: 292px;
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-top: 48px;
+    font-size: 12px; }
+  .games__info {
+    width: 292px;
+    min-height: 292px;
+    padding-left: 45px;
+    padding-right: 45px; }
+  .games__head h2 {
+    font-size: 52px;
+    line-height: 52px;
+    margin-top: 49px; }
+  .games__date-time {
+    min-width: auto;
+    margin-top: 47px; }
+  .games__number-month p:nth-last-child(1) {
+    font-size: 10px;
+    line-height: 140%; }
+  .games__number-month p:nth-of-type(1) {
+    font-size: 24px;
+    margin-bottom: 3px; }
+  .games__date-time > p:nth-last-child(1) {
+    font-size: 24px; }
+  .games__date-time > p:nth-last-child(1)::before {
+    content: "";
+    width: 56px;
+    top: 2px; }
+  .games__number-month::before {
+    width: 42px;
+    top: -2px; }
+  .games__date-time > p:nth-of-type(1) {
+    margin-bottom: 3px; }
+  .games__info > p {
+    margin-top: 0;
+    margin-bottom: 30px; }
+  .games__button {
+    font-size: 10px;
+    line-height: 12px;
+    padding: 12px 0;
+    border-width: 2px; }
+  .games__number-month {
+    margin-bottom: 3px; } }
+
+@media (max-width: 767px) {
+  .games {
+    min-height: 584px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 69px;
+    background-position: center 120%;
+    background-size: 156%; } }
