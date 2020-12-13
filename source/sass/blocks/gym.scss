@@ -2,7 +2,7 @@
   width: 100%;
   font-family: $roboto;
   color: $maincol;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
 }
 
 .gym__wrapper {
@@ -84,6 +84,7 @@
   justify-content: center;
 
   @media (min-resolution: $retina-dppx) {
+    background-size: cover;
     background-image: url("../img/video_2x.jpg");
   }
 }
