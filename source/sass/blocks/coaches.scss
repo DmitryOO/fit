@@ -1,0 +1,164 @@
+.coaches {
+  min-height: 633px;
+  font-family: $roboto;
+  font-size: 14px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.coaches__wrapper {
+  max-width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 77px;
+}
+
+.coaches__slider {
+  position: relative;
+}
+
+.coaches__slide-desktop {
+  display: flex;
+  justify-content: center;
+}
+
+.coaches__slide-tablet {
+  display: flex;
+  justify-content: center;
+}
+
+.coaches h2 {
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  color: $maincol;
+  margin-bottom: 52px;
+}
+
+.coaches__slide-mobile {
+  width: 260px;
+  height: 294px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.coaches__slide-mobile > p {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  font-weight: bold;
+  font-size: 18px;
+  bottom: 8px;
+}
+
+.coaches__slide-mobile img {
+  position: absolute;
+}
+
+.coaches__hover {
+  visibility: hidden;
+  width: 100%;
+  min-height: 100%;
+  position: absolute;
+  background-color: rgba($color: #102654, $alpha: 0.89);
+  text-align: center;
+}
+
+.coaches__hover h3 {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 54px;
+  margin-bottom: 0;
+}
+
+.coaches__hover > p {
+  font-size: 16px;
+  color: #b6bdcc;
+  margin-top: 0;
+}
+
+.coaches__hover ul {
+  width: 160px;
+  list-style: none;
+  text-align: left;
+  margin-top: 37px;
+  margin-left: 55px;
+  padding-left: 0;
+}
+
+.coaches__hover li {
+  position: relative;
+  padding-left: 10px;
+  margin-left: 7px;
+  margin-bottom: 12px;
+
+  &::before {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 3px;
+    position: absolute;
+    left: -6px;
+    top: 7px;
+  }
+}
+
+.coaches__slide-mobile:hover .coaches__hover {
+  visibility: visible;
+}
+
+.coaches__slide-mobile:hover > p {
+  display: none;
+}
+
+.coaches__slide-desktop .coaches__slide-tablet:nth-last-child(1) .coaches__slide-mobile:nth-last-child(1) {
+  margin-right: 0;
+}
+
+.coaches__arrow {
+  position: absolute;
+  top: 130px;
+
+  &--left {
+    left: -57px;
+  }
+
+  &--right {
+    right: -57px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    cursor: pointer;
+  }
+}
+
+.coaches__arrow:hover svg path,
+.coaches__arrow:focus svg path,
+.coaches__arrow:active svg path {
+  stroke: #5f5f5f;
+}
+
+
+@media (max-width: 1300px) {
+  .coaches__slide-mobile {
+    margin-right: 20px;
+  }
+
+  .coaches__arrow {
+    &--left {
+      left: -5px;
+    }
+
+    &--right {
+      right: -5px;
+    }
+  }
+
+  .coaches__right-arrow {
+    right: -5px;
+  }
+}

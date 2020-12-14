@@ -84,7 +84,7 @@
   justify-content: center;
 
   @media (min-resolution: $retina-dppx) {
-    background-size: cover;
+    background-size: 108%;
     background-image: url("../img/video_2x.jpg");
   }
 }
@@ -152,6 +152,7 @@
     background-image: url("../img/video_tablet_1x.jpg");
 
     @media (min-resolution: $retina-dppx) {
+      background-size: 100%;
       background-image: url("../img/video_tablet_2x.jpg");
     }
   }
