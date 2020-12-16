@@ -186,13 +186,7 @@
   &:active {
     border: none;
     color: #ffffff;
-    background-image: url("../img/button_background_1x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-
-    @media (min-resolution: $retina-dppx) {
-      background-image: url("../img/button_background_2x.jpg");
-    }
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   }
 }
 
