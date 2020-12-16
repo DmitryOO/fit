@@ -43,6 +43,7 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  position: relative;
 }
 
 .advantages__block svg {
@@ -108,8 +109,33 @@
   margin-top: 0;
 }
 
+.advantages__block--area::after {
+  content: "";
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+  position: absolute;
+  bottom: -63px;
+  left: -26px;
+}
+
+.advantages__block--parking::after {
+  content: "";
+  width: 340px;
+  height: 2px;
+  background-color: rgba(209, 10, 66, 0.2);
+  position: absolute;
+  bottom: -63px;
+  right: -10px;
+}
+
 
 @media (max-width: $tablet-width) {
+  .advantages__block--area::after,
+  .advantages__block--parking::after {
+    display: none;
+  }
+
   .advantages {
     padding-top: 60px;
     padding-bottom: 80px;

@@ -1,0 +1,241 @@
+.promo {
+  font-family: $roboto;
+  font-size: 16px;
+  line-height: 140%;
+  color: $maincol;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.promo h2 {
+  font-family: $bebas;
+  font-size: 49px;
+  line-height: 49px;
+  letter-spacing: 0.03em;
+  margin-top: 118px;
+  margin-bottom: 52px;
+}
+
+.promo__wrapper {
+  max-width: 1160px;
+  min-height: 462px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.promo__info {
+  width: 560px;
+  background-image: url("../img/girl_1x.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 216%;
+  background-position-y: 92%;
+
+  @media (min-resolution: $retina-dppx) {
+    background-size: 80%;
+    background-image: url("../img/girl_2x.jpg");
+  }
+}
+
+.promo__text {
+  width: 280px;
+  height: 100%;
+  background-color: #ed0233;
+  text-align: left;
+  color: #ffffff;
+  padding-left: 45px;
+  padding-bottom: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.promo__text p:nth-of-type(1) {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 156%;
+  margin-top: 34px;
+  margin-bottom: 0;
+}
+
+.promo__text p:nth-of-type(2) {
+  font-size: 70px;
+  font-weight: bold;
+  margin-top: 18px;
+  margin-bottom: 0;
+}
+
+.promo__text p:nth-of-type(3) {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 140%;
+  margin-top: 44px;
+  margin-bottom: 0;
+  padding-right: 45px;
+}
+
+.promo__text a {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 79px;
+  color: #ffffff;
+  border-bottom: 1px solid #ffffff;
+  margin-top: auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.promo__offers {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left;
+}
+
+.promo__offer {
+  width: 560px;
+  min-height: 211px;
+  padding-left: 28px;
+  padding-bottom: 27px;
+  border: 7px solid #51257c;
+  border-image: linear-gradient(to left top, #00359f, #d10a42);
+  border-image-slice: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.promo__offer h3 {
+  font-weight: bold;
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.promo__offer p {
+  margin-top: 12px;
+}
+
+.promo__offer a {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  width: 69px;
+  color: $maincol;
+  border-bottom: 1px solid $maincol;
+  margin-top: auto;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .promo__wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .promo__info {
+    width: 678px;
+    background-position-x: 148%;
+    background-position-y: 59%;
+    background-size: 74%;
+  }
+
+  .promo__text {
+    min-height: 462px;
+  }
+
+  .promo h2 {
+    font-size: 42px;
+    margin-top: 95px;
+    margin-bottom: 38px;
+  }
+
+  .promo__offers {
+    width: 678px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .promo__offer {
+    width: 324px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .promo__offers {
+    flex-direction: column;
+  }
+
+  .promo__info,
+  .promo__offers,
+  .promo__offer {
+    width: 290px;
+  }
+
+  .promo__text {
+    width: 100%;
+    min-height: 299px;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .promo__info {
+    min-height: 598px;
+    background-position-x: 19%;
+    background-position-y: 137%;
+    background-size: 124%;
+  }
+
+  .promo h2 {
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 43px;
+    margin-top: 69px;
+  }
+
+  .promo__text p:nth-of-type(3) {
+    text-align: center;
+    padding-right: 45px;
+    padding-left: 45px;
+    margin-top: 39px;
+  }
+
+  .promo__offer {
+    padding-left: 0;
+    text-align: center;
+    padding-bottom: 39px;
+    margin-bottom: 30px;
+  }
+
+  .promo__offer a {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7px;
+  }
+
+  .promo__offer h3 {
+    margin-top: 38px;
+  }
+
+  .promo__offer p {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
