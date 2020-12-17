@@ -81,3 +81,48 @@
     leftArrow.addEventListener('click', onMinusSlide);
   }
 }());
+
+(function () {
+  var slideIndex = 1;
+  var rightArrow = document.querySelector('.reviews__arrow--right');
+  var leftArrow = document.querySelector('.reviews__arrow--left');
+  var slides = document.querySelectorAll('.reviews__slide');
+
+  if (rightArrow && leftArrow && slides) {
+
+    var onResize = function () {
+      showSlides(slideIndex);
+    };
+
+    var onPlusSlide = function () {
+      showSlides(slideIndex += 1);
+    };
+
+    var onMinusSlide = function () {
+      showSlides(slideIndex -= 1);
+    };
+
+    var showSlides = function (n) {
+      var i;
+      slides.forEach(function (el) {
+        el.style.display = 'flex';
+      });
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = 'none';
+      }
+      slides[slideIndex - 1].style.display = 'flex';
+    };
+
+    showSlides(slideIndex);
+    window.addEventListener('resize', onResize);
+
+    rightArrow.addEventListener('click', onPlusSlide);
+    leftArrow.addEventListener('click', onMinusSlide);
+  }
+}());

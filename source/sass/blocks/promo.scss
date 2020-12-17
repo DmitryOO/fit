@@ -179,6 +179,10 @@
 }
 
 @media (max-width: $mobile-width) {
+  .promo {
+    padding-bottom: 20px;
+  }
+
   .promo__offers {
     flex-direction: column;
   }
