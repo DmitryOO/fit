@@ -239,7 +239,10 @@
               <div class="coaches__slide-tablet">
                 <div class="coaches__slide-mobile">
                   <picture>
-
+                    <source type="image/webp" srcset="./img/coach3_1x.webp, ./img/coach3_2x.webp 2x">
+                    <!-- 1x:260; 2x:520-->
+                    <img src="./img/coach2_1x.jpg" srcset="./img/coach3_2x.jpg 3x" width="260" height="294"  alt="фото тренера">
+                  </picture>
                   <p>Александр Пашков</p>
                   <div class="coaches__hover">
                     <h3>Александр Пашков</h3>
@@ -475,6 +478,45 @@
           <a class="reviews__arrow reviews__arrow--right">
             <svg width="18" height="34" viewbox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1l16 16L1 33" stroke="#AFAFAF"/></svg>
           </a>
+        </div>
+      </section>
+      <section class="form-contacts">
+        <div class="form-contacts__form form">
+          <h2>бесплатное занятие</h2>
+          <form>
+            <div class="form__input">
+              <input type="text" id="name" name="name" placeholder="Имя" required>
+              <label for="name" class="visually-hidden">Ваше Имя</label>
+              <input type="tel" id="tel" name="tel" placeholder="Телефон" required>
+              <label for="tel" class="visually-hidden">ВашТелефон</label>
+            </div>
+            <input type="submit" value="ОТПРАВИТЬ">
+          </form>
+        </div>
+        <div class="form-contacts contacts">
+          <h2>контакты</h2>
+          <div class="contacts__group">
+            <div class="contacts__adress-hours">
+              <div class="contacts__elem">
+                <h3>Адрес:</h3>
+                <p>г. Омск, ул. 60 лет Октября, 7</p>
+              </div>
+              <div class="contacts__elem">
+                <h3>График работы:</h3>
+                <p>Пн-Вс: с 8:00 до 22:00</p>
+              </div>
+            </div>
+            <div class="contacts__tel-mail">
+              <div class="contacts__elem">
+                <h3>Телефон:</h3>
+                <a href="tel:+780055555">8-800-555-55-55</a>
+              </div>
+              <div class="contacts__elem">
+                <h3>Email:</h3>
+                <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>

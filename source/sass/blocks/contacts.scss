@@ -1,0 +1,145 @@
+.contacts {
+  width: 50%;
+  flex-grow: 1;
+  font-family: $roboto;
+  color: $maincol;
+  padding-top: 64px;
+  padding-bottom: 40px;
+  padding-left: 120px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #74819c;
+}
+
+.contacts h2 {
+  font-family: $bebas;
+  font-size: 49px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 42px;
+}
+
+.contacts__group {
+  width: 404px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4px;
+}
+
+.contacts__group h3 {
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 7px;
+  margin-top: 0;
+}
+
+.contacts__group p {
+  font-size: 14px;
+  margin-top: 0;
+}
+
+.contacts__group a {
+  font-size: 14px;
+  color: $maincol;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.7;
+  }
+}
+
+.contacts__elem {
+  margin-bottom: 24px;
+}
+
+.contacts__adress-hours {
+  position: relative;
+}
+
+.contacts__adress-hours::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 102px;
+  background-color: #74819c;
+  position: absolute;
+  top: 1px;
+  right: -62px;
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    width: 100%;
+    padding-left: 133px;
+    padding-top: 66px;
+    padding-bottom: 39px;
+  }
+
+  .contacts h2 {
+    font-size: 42px;
+    margin-bottom: 34px;
+  }
+
+  .contacts__group {
+    width: 456px;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+
+  .contacts__group h3 {
+    font-size: 20px;
+    margin-bottom: 11px;
+  }
+
+  .contacts__group p,
+  .contacts__group a {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .contacts__tel-mail {
+    margin-left: 88px;
+  }
+
+  .contacts__adress-hours {
+    width: 226px;
+  }
+
+  .contacts__elem {
+    margin-bottom: 28px;
+  }
+
+  .contacts__adress-hours::after {
+    height: 129px;
+    top: 4px;
+    right: -41px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .contacts {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .contacts__group {
+    width: 100%;
+    flex-direction: column;
+    margin-top: 38px;
+  }
+
+  .contacts h2 {
+    font-size: 32px;
+    margin-bottom: 0;
+  }
+
+  .contacts__tel-mail {
+    margin-left: 0;
+  }
+
+  .contacts__adress-hours::after {
+    display: none;
+  }
+}

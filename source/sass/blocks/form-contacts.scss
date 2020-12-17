@@ -1,0 +1,13 @@
+.form-contacts {
+  max-width: 1366px;
+  min-height: 337px;
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (max-width: $tablet-width) {
+  .form-contacts {
+    flex-direction: column;
+  }
+}

@@ -1,4 +1,5 @@
 'use strict';
+
 (function () {
   var lastParagraph = document.querySelector('.gym__description p:last-child');
   if (lastParagraph) {
@@ -126,3 +127,14 @@
     leftArrow.addEventListener('click', onMinusSlide);
   }
 }());
+
+(function () {
+  var elements = document.querySelectorAll('#tel');
+  if (elements) {
+    for (var i = 0; i < elements.length; i++) {
+      new IMask(elements[i], {
+        mask: '00000000000',
+      });
+    }
+  }
+})();
