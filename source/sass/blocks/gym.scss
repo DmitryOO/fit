@@ -18,6 +18,7 @@
 .gym__description {
   max-width: 362px;
   padding-left: 5px;
+  margin-left: 55px;
 }
 
 .gym__description-photo {
@@ -33,6 +34,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 45px;
 }
 
 .gym__description p {
@@ -117,11 +119,13 @@
     text-align: center;
     padding-left: 85px;
     padding-right: 85px;
+    margin-left: 0;
   }
 
   .gym__description h3 {
     font-size: 42px;
     line-height: 42px;
+    margin-top: 42px;
   }
 
   .gym__description p:first-of-type {
@@ -179,6 +183,7 @@
   .gym__description h3 {
     font-size: 32px;
     line-height: 32px;
+    margin-top: 32px;
   }
 
   .gym__description p:first-of-type {
