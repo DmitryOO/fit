@@ -4840,4 +4840,14 @@
 	Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+(function () {
+  var elements = document.querySelectorAll('#tel');
+  if (elements) {
+    for (var i = 0; i < elements.length; i++) {
+      new IMask(elements[i], {
+        mask: '00000000000',
+      });
+    }
+  }
+})();
 //# sourceMappingURL=imask.js.map

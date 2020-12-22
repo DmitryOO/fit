@@ -9,7 +9,7 @@ html {
   box-sizing: inherit;
 }
 
-.visually-hidden:not(:focus):not(:active) {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;

@@ -1,4 +1,18 @@
 'use strict';
+(function () {
+  var lastParagraph = document.querySelector('.gym__description p:last-child');
+  if (lastParagraph) {
+    var removeText = function () {
+      if (window.innerWidth < 1200) {
+        lastParagraph.style.display = 'none';
+      } else {
+        lastParagraph.style.display = 'inline';
+      }
+    };
+    removeText();
+    window.addEventListener('resize', removeText);
+  }
+}());
 
 (function () {
   var lastParagraph = document.querySelector('.gym__description p:last-child');
@@ -53,15 +67,15 @@
 
     var showSlides = function (n) {
       var i;
-      slidesDesktop.forEach(function (el) {
-        el.style.display = 'flex';
-      });
-      slidesTablet.forEach(function (el) {
-        el.style.display = 'flex';
-      });
-      slidesMobile.forEach(function (el) {
-        el.style.display = 'flex';
-      });
+      for (var j = 0; j < slidesDesktop.length; j++) {
+        slidesDesktop[j].style.display = 'flex';
+      }
+      for (var k = 0; k < slidesTablet.length; k++) {
+        slidesTablet[k].style.display = 'flex';
+      }
+      for (var m = 0; m < slidesMobile.length; m++) {
+        slidesMobile[m].style.display = 'flex';
+      }
       if (n > slides.length) {
         slideIndex = 1;
       }
@@ -105,9 +119,9 @@
 
     var showSlides = function (n) {
       var i;
-      slides.forEach(function (el) {
-        el.style.display = 'flex';
-      });
+      for (var j = 0; j < slides.length; j++) {
+        slides[j].style.display = 'flex';
+      }
       if (n > slides.length) {
         slideIndex = 1;
       }
@@ -127,14 +141,3 @@
     leftArrow.addEventListener('click', onMinusSlide);
   }
 }());
-
-(function () {
-  var elements = document.querySelectorAll('#tel');
-  if (elements) {
-    for (var i = 0; i < elements.length; i++) {
-      new IMask(elements[i], {
-        mask: '00000000000',
-      });
-    }
-  }
-})();

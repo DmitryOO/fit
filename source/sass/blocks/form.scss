@@ -6,7 +6,10 @@
   background-color: $maincol;
   padding-top: 64px;
   padding-bottom: 40px;
-  padding-left: 103px;
+  padding-right: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
 .form h2 {
@@ -16,6 +19,7 @@
   text-transform: uppercase;
   margin-top: 0;
   margin-bottom: 39px;
+  padding-right: 43px;
 }
 
 .form__input {
@@ -30,7 +34,7 @@
   font-size: 14px;
   line-height: 22px;
   color: #ffffff;
-  background-color: inherit;
+  background-color: transparent;
   border: none;
   border-bottom: 1px solid #ffffff;
 
@@ -49,7 +53,7 @@
   width: 410px;
 }
 
-form > input {
+.form input[type="submit"] {
   width: 100%;
   display: block;
   font-weight: 700;
@@ -59,7 +63,7 @@ form > input {
   color: #ffffff;
   text-align: center;
   border: 4px solid #ffffff;
-  background-color: inherit;
+  background-color: transparent;
   padding-top: 16px;
   padding-bottom: 16px;
   cursor: pointer;
@@ -75,8 +79,10 @@ form > input {
   .form {
     width: 100%;
     padding-left: 133px;
+    padding-right: 163px;
     padding-top: 66px;
     padding-bottom: 67px;
+    align-items: center;
   }
 
   .form form {
@@ -86,6 +92,7 @@ form > input {
   .form h2 {
     font-size: 42px;
     margin-bottom: 33px;
+    padding-right: 154px;
   }
 
   .form__input input {
@@ -98,6 +105,7 @@ form > input {
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 67px;
+    align-items: flex-start;
   }
 
   .form form {
@@ -107,6 +115,8 @@ form > input {
   .form h2 {
     font-size: 32px;
     margin-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   .form__input {
@@ -120,4 +130,3 @@ form > input {
     margin-top: 36px;
   }
 }
-

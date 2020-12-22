@@ -72,20 +72,10 @@
   &:focus,
   &:active {
     cursor: pointer;
+    opacity: 0.7;
   }
 }
 
-.reviews__arrow:hover svg path,
-.reviews__arrow:focus svg path,
-.reviews__arrow:active svg path {
-  stroke: #5f5f5f;
-}
-
-.coaches__arrow:hover svg path,
-.coaches__arrow:focus svg path,
-.coaches__arrow:active svg path {
-  stroke: #5f5f5f;
-}
 
 .reviews__slider .reviews__slide:nth-child(n+2) {
   display: none;

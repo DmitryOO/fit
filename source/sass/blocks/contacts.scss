@@ -72,14 +72,17 @@
 @media (max-width: $tablet-width) {
   .contacts {
     width: 100%;
-    padding-left: 133px;
+    padding-left: 0;
+    padding-right: 45px;
     padding-top: 66px;
     padding-bottom: 39px;
+    align-items: center;
   }
 
   .contacts h2 {
     font-size: 42px;
     margin-bottom: 34px;
+    margin-left: -304px;
   }
 
   .contacts__group {
@@ -122,6 +125,7 @@
   .contacts {
     padding-left: 15px;
     padding-right: 15px;
+    align-items: flex-start;
   }
 
   .contacts__group {
@@ -133,6 +137,7 @@
   .contacts h2 {
     font-size: 32px;
     margin-bottom: 0;
+    margin-left: 0;
   }
 
   .contacts__tel-mail {
