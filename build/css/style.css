@@ -955,13 +955,21 @@ footer {
   width: 360px;
   height: 448px;
   background-color: #ffffff; }
-  .members__type:hover, .members__type:focus, .members__type:focus-within, .members__type:active {
+  .members__type:hover, .members__type:focus, .members__type:active {
     background-image: url("../img/tab_background_1x.png");
     background-size: 100% 100%;
     background-repeat: no-repeat; }
     @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
-      .members__type:hover, .members__type:focus, .members__type:focus-within, .members__type:active {
+      .members__type:hover, .members__type:focus, .members__type:active {
         background-image: url("../img/tab_background_2x.png"); } }
+
+.members__type:focus-within {
+  background-image: url("../img/tab_background_1x.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat; }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+    .members__type:focus-within {
+      background-image: url("../img/tab_background_2x.png"); } }
 
 .members__type h3 {
   font-weight: bold;
@@ -1619,7 +1627,7 @@ footer {
     padding-left: 46px; }
   .advantages h2 {
     font-size: 32px;
-    margin-bottom: 42px; }
+    margin-bottom: 39px; }
   .advantages__number {
     text-align: center;
     margin-bottom: 9px; }
@@ -1650,6 +1658,7 @@ footer {
 
 .promo__wrapper {
   max-width: 1160px;
+  height: 462px;
   min-height: 462px;
   margin-left: auto;
   margin-right: auto;
@@ -2281,7 +2290,8 @@ footer {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
-  background-color: #030a1a; }
+  background-color: #030a1a;
+  padding-bottom: 15px; }
 
 .page-footer__wrapper {
   max-width: 1160px;
@@ -2312,7 +2322,7 @@ footer {
 @media (max-width: 1199px) {
   .page-footer {
     padding-top: 4px;
-    padding-bottom: 13px;
+    padding-bottom: 19px;
     font-size: 14px;
     line-height: 15px; }
   .page-footer__wrapper {
@@ -2331,7 +2341,7 @@ footer {
     margin-top: 11px; }
   .page-footer__wrapper {
     padding-top: 38px;
-    padding-bottom: 32px;
+    padding-bottom: 35px;
     padding-left: 15px;
     padding-right: 35px;
     -webkit-box-orient: vertical;
@@ -2404,7 +2414,7 @@ footer {
         -ms-flex-direction: column;
             flex-direction: column; }
   .footer-menu__list--2 {
-    margin-top: -27px; }
+    margin-top: -25px; }
   .footer-menu__item {
     margin-bottom: 17px; }
   .footer-menu__item a {

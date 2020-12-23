@@ -133,7 +133,6 @@
 
   &:hover,
   &:focus,
-  &:focus-within,
   &:active {
     background-image: url("../img/tab_background_1x.png");
     background-size: 100% 100%;
@@ -142,6 +141,16 @@
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/tab_background_2x.png");
     }
+  }
+}
+
+.members__type:focus-within {
+  background-image: url("../img/tab_background_1x.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dppx) {
+    background-image: url("../img/tab_background_2x.png");
   }
 }
 

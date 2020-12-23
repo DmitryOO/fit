@@ -4842,12 +4842,19 @@
 })));
 (function () {
   var elements = document.querySelectorAll('#tel');
-  if (elements) {
-    for (var i = 0; i < elements.length; i++) {
-      new IMask(elements[i], {
-        mask: '00000000000',
-      });
-    }
+  for (var i = 0; i < elements.length; i++) {
+    new IMask(elements[i], {
+      mask: '+7(000)000-00-00',
+    });
   }
 })();
+
+(function () {
+  var tel = document.getElementById('tel');
+  var add7ToTel = function(){
+    tel.value='+7(___)___-__-__';
+    tel.removeEventListener('focus',add7ToTel);
+  };
+  tel.addEventListener('focus',add7ToTel);
+  })();
 //# sourceMappingURL=imask.js.map
