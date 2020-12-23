@@ -15,21 +15,6 @@
 }());
 
 (function () {
-  var lastParagraph = document.querySelector('.gym__description p:last-child');
-  if (lastParagraph) {
-    var removeText = function () {
-      if (window.innerWidth < 1200) {
-        lastParagraph.style.display = 'none';
-      } else {
-        lastParagraph.style.display = 'inline';
-      }
-    };
-    removeText();
-    window.addEventListener('resize', removeText);
-  }
-}());
-
-(function () {
   var slideIndex = 1;
   var rightArrow = document.querySelector('.coaches__arrow--right');
   var leftArrow = document.querySelector('.coaches__arrow--left');
