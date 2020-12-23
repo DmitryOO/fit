@@ -18,7 +18,6 @@
 
 .promo__wrapper {
   max-width: 1160px;
-  height: 462px;
   min-height: 462px;
   margin-left: auto;
   margin-right: auto;
@@ -95,6 +94,7 @@
 }
 
 .promo__offers {
+  min-height: 462px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -168,6 +168,7 @@
 
   .promo__offers {
     width: 678px;
+    min-height: auto;
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
