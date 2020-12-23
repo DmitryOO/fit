@@ -1790,6 +1790,7 @@ footer {
 
 @media (max-width: 1199px) {
   .promo__wrapper {
+    height: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;

@@ -144,6 +144,7 @@
 
 @media (max-width: $tablet-width) {
   .promo__wrapper {
+    height: auto;
     flex-direction: column;
     align-items: center;
   }
