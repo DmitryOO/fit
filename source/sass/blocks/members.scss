@@ -95,6 +95,7 @@
   padding-left: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .members h2 {
@@ -266,6 +267,10 @@
   .members__type h3 {
     font-size: 22px;
     margin-top: 46px;
+  }
+
+  .members__type p:first-of-type {
+    margin-top: 9px;
   }
 
   .members__type p:nth-of-type(2) {

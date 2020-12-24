@@ -2,7 +2,7 @@
   width: 100%;
   font-family: $roboto;
   color: $maincol;
-  padding-bottom: 5px;
+  padding-bottom: 233px;
 }
 
 .gym__wrapper {
@@ -13,6 +13,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .gym__description {
@@ -75,9 +76,10 @@
   width: 364px;
   height: 228px;
   background-color: #7c8fb4;
-  position: relative;
-  left: 39px;
-  top: -113px;
+  position: absolute;
+  left: 50%;
+  top: 408px;
+  margin-left: -143px;
   background-image: url("../img/video_1x.jpg");
   background-repeat: no-repeat;
   background-position-y: bottom;
@@ -100,9 +102,19 @@
   background-repeat: no-repeat;
   background-size: cover;
   border: 0;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
 }
 
 @media (max-width: $tablet-width) {
+  .gym {
+    padding-bottom: 5px;
+  }
+
   .gym__wrapper {
     margin-left: 45px;
     margin-right: 45px;
@@ -151,6 +163,8 @@
   .gym__video {
     width: 266px;
     height: 167px;
+    position: relative;
+    margin: auto;
     left: 0;
     top: -84px;
     background-image: url("../img/video_tablet_1x.jpg");

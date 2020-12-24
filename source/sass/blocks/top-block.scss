@@ -36,13 +36,13 @@
   list-style: none;
   text-align: right;
   padding-left: 0;
-  margin-bottom: -86px;
+  margin-top: 242px;
 }
 
 .top-block__facilities-text {
   max-width: 380px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   text-align: right;
   padding-top: 60px;
   padding-left: 19px;
@@ -63,7 +63,7 @@
   margin-right: -17px;
 }
 
-.top-block a {
+.top-block a:not(.page-header__logo) {
   &:hover,
   &:focus,
   &:active {
@@ -108,7 +108,7 @@
   text-align: right;
   align-self: flex-end;
   padding-left: 0;
-  margin-bottom: 57px;
+  margin-bottom: 25px;
 }
 
 .top-block__socials a {
@@ -168,6 +168,9 @@
 
   .top-block__info {
     margin-top: 23px;
+    width: 678px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .top-block__facilities {
@@ -234,7 +237,8 @@
   }
 
   .top-block__facilities {
-    margin-bottom: -63px;
+    margin-top: 165px;
+    margin-bottom: 80px;
     margin-left: -3px;
   }
 
@@ -247,5 +251,9 @@
   .top-block__buy {
     width: 100%;
     align-items: center;
+  }
+
+  .top-block__info {
+    width: auto;
   }
 }
