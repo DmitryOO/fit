@@ -11,7 +11,7 @@
   border-bottom: 2px solid #d10a42;
 }
 
-.members__radio--month1:focus ~ .members__tabs .members__label--month1 {
+.members__radio--month1:focus ~ .members__tabs {
   outline: rgba($color: #d10a42, $alpha: 0.5) auto 1px;
 }
 
@@ -33,7 +33,7 @@
   border-bottom: 2px solid #d10a42;
 }
 
-.members__radio--month6:focus ~ .members__tabs .members__label--month6 {
+.members__radio--month6:focus ~ .members__tabs {
   outline: rgba($color: #d10a42, $alpha: 0.5) auto 1px;
 }
 
@@ -55,7 +55,7 @@
   border-bottom: 2px solid #d10a42;
 }
 
-.members__radio--month12:focus ~ .members__tabs .members__label--month12 {
+.members__radio--month12:focus ~ .members__tabs {
   outline: rgba($color: #d10a42, $alpha: 0.5) auto 1px;
 }
 
@@ -236,7 +236,7 @@
 
 @media (max-width: $mobile-width) {
   .members {
-    padding-top: 134px;
+    padding-top: 131px;
     padding-bottom: 19px;
     background-image: none;
   }

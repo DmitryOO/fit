@@ -31,6 +31,7 @@
 
 .games__head {
   display: flex;
+  justify-content: space-between;
 }
 
 .games__head h2 {
@@ -205,5 +206,9 @@
     margin-top: 69px;
     background-position: center 120%;
     background-size: 156%;
+  }
+
+  .games__info {
+    width: 100%;
   }
 }

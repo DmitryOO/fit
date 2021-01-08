@@ -69,6 +69,11 @@
   right: -62px;
 }
 
+.contacts__tel-mail {
+  max-width: 110px;
+}
+
+
 @media (max-width: $tablet-width) {
   .contacts {
     width: 100%;
@@ -103,6 +108,7 @@
   }
 
   .contacts__tel-mail {
+    max-width: 150px;
     margin-left: 88px;
   }
 
