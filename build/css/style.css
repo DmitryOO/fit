@@ -981,6 +981,7 @@ footer {
 .members__type {
   width: 360px;
   height: 448px;
+  margin-bottom: 16px;
   background-color: #ffffff; }
   .members__type:hover, .members__type:focus, .members__type:active {
     background-image: url("../img/tab_background_1x.png");
@@ -2270,8 +2271,9 @@ footer {
   top: 1px;
   right: -62px; }
 
-.contacts__tel-mail {
-  max-width: 110px; }
+.contacts__tel {
+  max-width: 110px;
+  padding-right: 10px; }
 
 @media (max-width: 1199px) {
   .contacts {
@@ -2301,8 +2303,10 @@ footer {
     font-size: 18px;
     margin-bottom: 5px; }
   .contacts__tel-mail {
-    max-width: 150px;
     margin-left: 88px; }
+  .contacts__tel {
+    max-width: 120px;
+    padding-right: 0; }
   .contacts__adress-hours {
     width: 226px; }
   .contacts__elem {
@@ -2371,7 +2375,7 @@ footer {
 
 @media (max-width: 1230px) {
   .page-footer__wrapper {
-    max-width: 1130px; } }
+    max-width: 1110px; } }
 
 @media (max-width: 1199px) {
   .page-footer {
