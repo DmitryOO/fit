@@ -93,9 +93,13 @@
 .members__types {
   list-style: none;
   padding-left: 0;
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  &--active {
+    display: flex;
+  }
 }
 
 .members h2 {
@@ -125,6 +129,10 @@
   margin-bottom: -13px;
   padding-bottom: 11px;
   cursor: pointer;
+
+  &--active {
+    border-bottom: 2px solid #d10a42;
+  }
 }
 
 .members__type {

@@ -156,3 +156,41 @@
   }
 }());
 
+(function () {
+  var membersButtons = document.querySelectorAll('.members__radio');
+  var membersLabels = document.querySelectorAll('.members__label');
+  var membersTypes = document.querySelectorAll('.members__types');
+
+  if (membersButtons && membersLabels && membersTypes) {
+    membersButtons[0].addEventListener('focus', function () {
+      for (var j = 0; j < membersButtons.length; j++) {
+        membersButtons[j].classList.remove('members__radio--active');
+        membersLabels[j].classList.remove('members__label--active');
+        membersTypes[j].classList.remove('members__types--active');
+      }
+      membersButtons[0].classList.add('members__radio--active');
+      membersLabels[0].classList.add('members__label--active');
+      membersTypes[0].classList.add('members__types--active');
+    });
+    membersButtons[1].addEventListener('focus', function () {
+      for (var i = 0; i < membersButtons.length; i++) {
+        membersButtons[i].classList.remove('members__radio--active');
+        membersLabels[i].classList.remove('members__label--active');
+        membersTypes[i].classList.remove('members__types--active');
+      }
+      membersButtons[1].classList.add('members__radio--active');
+      membersLabels[1].classList.add('members__label--active');
+      membersTypes[1].classList.add('members__types--active');
+    });
+    membersButtons[2].addEventListener('focus', function () {
+      for (var k = 0; k < membersButtons.length; k++) {
+        membersButtons[k].classList.remove('members__radio--active');
+        membersLabels[k].classList.remove('members__label--active');
+        membersTypes[k].classList.remove('members__types--active');
+      }
+      membersButtons[2].classList.add('members__radio--active');
+      membersLabels[2].classList.add('members__label--active');
+      membersTypes[2].classList.add('members__types--active');
+    });
+  }
+}());

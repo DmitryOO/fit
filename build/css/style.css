@@ -939,14 +939,16 @@ footer {
 .members__types {
   list-style: none;
   padding-left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
+  .members__types--active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .members h2 {
   font-family: "Bebas Neue", "Arial", sans-serif;
@@ -977,6 +979,8 @@ footer {
   margin-bottom: -13px;
   padding-bottom: 11px;
   cursor: pointer; }
+  .members__label--active {
+    border-bottom: 2px solid #d10a42; }
 
 .members__type {
   width: 360px;
