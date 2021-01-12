@@ -856,63 +856,6 @@ footer {
     .gym__video {
       background-image: url("../img/video_mobile_2x.jpg"); } }
 
-.members__radio--month1:checked ~ .members__lists .members__types--month1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.members__radio--month1:checked ~ .members__lists .members__types--month6,
-.members__radio--month1:checked ~ .members__lists .members__types--month12 {
-  display: none; }
-
-.members__radio--month1:checked ~ .members__tabs .members__label--month1 {
-  border-bottom: 2px solid #d10a42; }
-
-.members__radio--month1:focus ~ .members__tabs {
-  outline: rgba(209, 10, 66, 0.5) auto 1px; }
-
-.members__radio--month1:checked ~ .members__tabs .members__label--month6,
-.members__radio--month1:checked ~ .members__tabs .members__label--month12 {
-  border: none; }
-
-.members__radio--month6:checked ~ .members__lists .members__types--month6 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.members__radio--month6:checked ~ .members__lists .members__types--month1,
-.members__radio--month6:checked ~ .members__lists .members__types--month12 {
-  display: none; }
-
-.members__radio--month6:checked ~ .members__tabs .members__label--month6 {
-  border-bottom: 2px solid #d10a42; }
-
-.members__radio--month6:focus ~ .members__tabs {
-  outline: rgba(209, 10, 66, 0.5) auto 1px; }
-
-.members__radio--month6:checked ~ .members__tabs .members__label--month1,
-.members__radio--month6:checked ~ .members__tabs .members__label--month12 {
-  border: none; }
-
-.members__radio--month12:checked ~ .members__lists .members__types--month12 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-.members__radio--month12:checked ~ .members__lists .members__types--month1,
-.members__radio--month12:checked ~ .members__lists .members__types--month6 {
-  display: none; }
-
-.members__radio--month12:checked ~ .members__tabs .members__label--month12 {
-  border-bottom: 2px solid #d10a42; }
-
-.members__radio--month12:focus ~ .members__tabs {
-  outline: rgba(209, 10, 66, 0.5) auto 1px; }
-
-.members__radio--month12:checked ~ .members__tabs .members__label--month1,
-.members__radio--month12:checked ~ .members__tabs .members__label--month6 {
-  border: none; }
-
 .members {
   width: 100%;
   min-height: 921px;
