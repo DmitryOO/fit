@@ -72,6 +72,8 @@
 .contacts__tel {
   max-width: 110px;
   padding-right: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 
@@ -122,7 +124,7 @@
   }
 
   .contacts__elem {
-    margin-bottom: 28px;
+    margin-bottom: 25px;
   }
 
   .contacts__adress-hours::after {
@@ -153,6 +155,7 @@
 
   .contacts__tel-mail {
     margin-left: 0;
+    margin-top: 5px;
   }
 
   .contacts__adress-hours::after {
