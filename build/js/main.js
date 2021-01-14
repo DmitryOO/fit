@@ -160,9 +160,15 @@
   var membersButtons = document.querySelectorAll('.members__radio');
   var membersLabels = document.querySelectorAll('.members__label');
   var membersTypes = document.querySelectorAll('.members__types');
+  var membersLinks = document.querySelectorAll('.members__types a');
 
-  if (membersButtons && membersLabels && membersTypes) {
+  for (var m = 0; m < membersLinks.length; m++) {
+    membersLinks[m].setAttribute('tabindex', '-1');
+  }
+
+  if (membersButtons && membersLabels && membersTypes && membersLinks) {
     membersButtons[0].addEventListener('focus', function () {
+      changeFocus(0);
       for (var j = 0; j < membersButtons.length; j++) {
         membersButtons[j].classList.remove('members__radio--active');
         membersLabels[j].classList.remove('members__label--active');
@@ -173,6 +179,7 @@
       membersTypes[0].classList.add('members__types--active');
     });
     membersButtons[1].addEventListener('focus', function () {
+      changeFocus(1);
       for (var i = 0; i < membersButtons.length; i++) {
         membersButtons[i].classList.remove('members__radio--active');
         membersLabels[i].classList.remove('members__label--active');
@@ -183,6 +190,7 @@
       membersTypes[1].classList.add('members__types--active');
     });
     membersButtons[2].addEventListener('focus', function () {
+      changeFocus(2);
       for (var k = 0; k < membersButtons.length; k++) {
         membersButtons[k].classList.remove('members__radio--active');
         membersLabels[k].classList.remove('members__label--active');
@@ -191,6 +199,26 @@
       membersButtons[2].classList.add('members__radio--active');
       membersLabels[2].classList.add('members__label--active');
       membersTypes[2].classList.add('members__types--active');
+
     });
   }
+  var changeFocus = function (el) {
+    membersButtons[el].addEventListener('keydown', function (evt) {
+      if (evt.key === 'Enter') {
+        var selectedLinks = membersTypes[el].querySelectorAll('li a');
+        for (var i = 0; i < selectedLinks.length; i++) {
+          selectedLinks[i].setAttribute('tabindex', '');
+        }
+        selectedLinks[0].focus();
+        selectedLinks[selectedLinks.length - 1].onblur = function () {
+          if (membersButtons[el + 1]) {
+            membersButtons[el + 1].focus();
+          }
+          for (var j = 0; j < membersLinks.length; j++) {
+            membersLinks[j].setAttribute('tabindex', '-1');
+          }
+        };
+      }
+    });
+  };
 }());
